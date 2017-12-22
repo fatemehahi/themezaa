@@ -1,0 +1,162 @@
+
+._headermain{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+}
+/*MENU*/
+.top-bar{
+background:transparent;
+height: auto;
+}
+.top-bar-section ul li{
+background:transparent;
+}
+.top-bar-section ul li > a{
+line-height: 25px !important;
+padding: 24px 26px 15px !important;
+font-size: 17px;
+background:transparent !important;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button){
+  color: rgba(255,255,255,0.6);
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+color: rgba(255,255,255,0.6);
+background: transparent;
+}
+/*LOGO*/
+._logo img{
+  max-height: 26px;
+}
+/*toolsbar*/
+._headermain ._toolsbar > ul > li:first-child > a{
+padding-left: 20px;
+}
+._headermain ._toolsbar > ul > li > a > i{
+  color: #fff;
+  line-height: 67px;
+  font-size: 17px;
+}
+/*parralex*/
+.parralex-headermain{
+  background-image: url("../images/parallax-bg-01.jpg");
+  height: 600px;
+}
+._opacity-black{
+  position: absolute;
+height: 100%;
+width: 100%;
+opacity: 0.5;
+top: 0;
+left: 0;
+  background-color: #000;
+}
+.parralex-headermain ._item{
+  float: left;
+background-color: rgba(255, 33, 79, 0.85);
+position: relative;
+}
+.parralex-headermain ._item ._content{
+padding-top: 37px;
+width: 90%;
+padding-right: 40px;
+padding-bottom: 37px;
+overflow: hidden;
+}
+.parralex-headermain ._item h1{
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 40px
+}
+.parralex-headermain ._item p{
+color: #fff;
+  margin-bottom: 40px
+}
+/*CARDS*/
+.cards ._section h2{
+  color: #939393;
+font-size: 18px;
+}
+.cards ._section  p{
+  font-size: 25px;
+  color: #232323;
+}
+.cards .item h4{
+font-size: 23px;
+color: #232323;
+margin: 0;
+padding-top: 25px;
+}
+.cards .item p{
+padding-top: 10px;
+padding-bottom: 30px;
+padding: 10px 30px 40px;
+}
+.cards .item i{
+  font-size: 50px;
+  color: #939393;
+  padding-top: 30px;
+}
+.cards .item ,.cards .content {
+  position: relative !important;
+}
+.cards .item::before,.cards .item::after,.cards .content::after,.cards .content::before{
+  content: "";
+position: absolute;
+z-index: -1;
+background-color: #ff214f;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+.cards .item::before,.cards .item::after{
+  height: 3px;
+}
+
+.cards .item::before{
+left: 0;
+right: 100%;
+top: 0;
+-webkit-transition-property: right;
+transition-property: right;
+}
+.cards .item:hover::before{
+  right: 0;
+}
+.cards .item::after{
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: left;
+  transition-property: left;
+}
+.cards .item:hover::after{
+  left: 0;
+}
+
+.cards .content::before,.cards .content::after{
+width: 3px;
+}
+.cards .content::before{
+top: 0;
+bottom: 100%;
+left: 0;
+-webkit-transition-property: bottom;
+transition-property: bottom;
+}
+.cards .content:hover::before{
+  bottom: 0;
+}
+.cards .content::after{
+bottom: 0;
+top: 100%;
+right:  0;
+-webkit-transition-property: top;
+transition-property: top;
+}
+.cards .content:hover::after{
+  top: 0;
+}
